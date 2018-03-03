@@ -19,24 +19,23 @@ favorite_restaurant = input("What is their favorite restaurant to eat at? ")
 print("{}'s favorite restaurant to eat at is {}".format(name3, favorite_restaurant))
 
 
-
+"""
 
 # Exercise 4 Day of the week
-days_of_week = {0 : "Sunday", 1 : "Monday", 2 : "Tuesday", 3 : "Wednesday", 4 : "Thursday", 5 : "Friday", 6 : "Saturday"}
-
-def day_calculator(day):
+def day_calculator():
+    days_of_week = {0 : "Sunday", 1 : "Monday", 2 : "Tuesday", 3 : "Wednesday", 4 : "Thursday", 5 : "Friday", 6 : "Saturday"}
     day = int(input('Day (0-6)? ')) 
     
     for number, words in days_of_week.items():
-        if number == day:
-            return words 
-        else:
-            return "That's not a valid entry!"
+        if day == number:
+            print(words)
             
-print (day_calculator(5))
+day_calculator()
+
+    
     
 
-
+"""
 
 # Exercise 5 Work or Sleep In?
 def go_to_work():
@@ -93,7 +92,7 @@ def tip_calculator():
             
     if split == "YES":
         splitting = int(input("How many ways?: "))
-        print("Each of you will pay: ${}".format(total / splitting))
+        print("Each of you will pay: ${}".format(total_rounded_cents / splitting))
         
             
 tip_calculator() 
@@ -106,7 +105,6 @@ while counter < 10:
     counter += 1
     print(counter)
     
-"""
 
 #Exercise 10: How many coins? 
 
@@ -124,3 +122,5 @@ def coin_adder():
             exit()
             
 coin_adder()
+
+"""
