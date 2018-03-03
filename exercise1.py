@@ -109,16 +109,18 @@ while counter < 10:
 """
 
 #Exercise 10: How many coins? 
-coins = 0 
 
-print("You have {} coins".format(coins))
-asking = input("Would you like another (yes/no)?").upper()
-
-
-while asking == "YES":
-    coins += 1
-    print(coins)
-    print("You now have {} coins".format(coins) + asking)
-else:
-    print("Okay, bye")
-    exit()
+def coin_adder():
+    coins = 0
+    print("You currently have {} coins".format(coins))
+    while coins >=  0:
+        asking = input("Would you like another (yes/no)? ").upper()
+        while asking == "YES":
+            coins += 1
+            print("You have {} coins".format(coins))
+            break
+        if asking == "NO":
+            print("Okay, I guess you have enough coins! Bye!")
+            exit()
+            
+coin_adder()
