@@ -1,4 +1,3 @@
-"""
 # Exercise 1 Hello, you!
 name1 = input("First Name? ")
 print("Hey, what's up {}".format(name1))
@@ -19,7 +18,7 @@ favorite_restaurant = input("What is their favorite restaurant to eat at? ")
 print("{}'s favorite restaurant to eat at is {}".format(name3, favorite_restaurant))
 
 
-"""
+
 
 # Exercise 4 Day of the week
 def day_calculator():
@@ -32,10 +31,8 @@ def day_calculator():
             
 day_calculator()
 
-    
-    
 
-"""
+
 
 # Exercise 5 Work or Sleep In?
 def go_to_work():
@@ -61,6 +58,7 @@ def celsius_to_fahrenheit():
     print("The temperature in Fahreneit is {} degrees".format(temp_fahrenheit))
     
 celsius_to_fahrenheit() 
+
 
 
 
@@ -99,6 +97,7 @@ tip_calculator()
 
 
 
+
 #Exercise 9: 1 to 10
 counter = 0
 while counter < 10:
@@ -106,8 +105,9 @@ while counter < 10:
     print(counter)
     
 
-#Exercise 10: How many coins? 
 
+
+#Exercise 10: How many coins? 
 def coin_adder():
     coins = 0
     print("You currently have {} coins".format(coins))
@@ -122,5 +122,3 @@ def coin_adder():
             exit()
             
 coin_adder()
-
-"""
