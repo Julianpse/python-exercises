@@ -44,7 +44,7 @@ for i in range(0, len(list_a)):
     list_c.append(list_a[i] * list_b[i])
 
 print(list_c)
-"""
+
 #9. Matrix Addition
 m1 = [[1, 2] , [3,4]]
 m2 = [[5,6] , [7,8]]
@@ -60,9 +60,18 @@ for k in m3:
 
 
 #10. Matrix Addition II
-
-
+for i in range(len(matrix1)):
+    for j i range(len(matrix2)):
+        
+"""
 #11. De-Dup
+list_a = ["hello", "apple", "banana", "ice cream", "orange", "kiwi"]
+list_b = ["goodbye", "apple", "banana", "froyo", "tangerine", "pomegranate"]
 
-
+for items in list_a:
+    for things in list_b:
+        if items == things:
+            list_a.remove(items) and list_b.remove(things)
+print(list_a)
+print(list_b)
 

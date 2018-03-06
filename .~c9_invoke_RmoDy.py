@@ -1,3 +1,4 @@
+"""
 #1. 1 to 10
 for numbers in range(1,11):
     print(numbers)
@@ -43,22 +44,9 @@ top_bottom = width
 middle = height - 2
 count = 0
 
+"""
 
-#7 & 8 Print a Triangle ## need help with this one
-def triangle(rows):
-    for i in range(rows):
-        print(' ' * (rows-i-1) + '*' * (2 * i + 1))
-        
-print(triangle(7))
-
-
-
-#9 Multiplication Table
-mult_table_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-def times_tables(n):
-    for i in mult_table_list:
-        print("{} x {} = {}".format(n,i,i*n))
-
-
-print(times_tables(8))
+#7 Print a Triangle
+a = "*"
+counter = 0
+while 
