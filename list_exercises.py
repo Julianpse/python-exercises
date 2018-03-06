@@ -65,13 +65,12 @@ for i in range(len(matrix1)):
         
 """
 #11. De-Dup
-list_a = ["hello", "apple", "banana", "ice cream", "orange", "kiwi"]
-list_b = ["goodbye", "apple", "banana", "froyo", "tangerine", "pomegranate"]
+a = ["hello", "apple", "banana", "ice cream", "orange", "banana", "kiwi", "hello"]
+b = []
 
-for items in list_a:
-    for things in list_b:
-        if items == things:
-            list_a.remove(items) and list_b.remove(things)
-print(list_a)
-print(list_b)
+a = set(a)
+b = list(a)
+
+print(b)
+
 
