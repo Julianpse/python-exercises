@@ -12,3 +12,9 @@ print(string[::-1])
 #4. Leetspeak
 paragraph = "Given a paragraph of text as a string, print the paragraph in leetspeak."
 
+
+#5.
+
+vowels = [a, e, i, o, u]
+string = ""
+
