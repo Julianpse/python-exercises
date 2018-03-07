@@ -38,16 +38,17 @@ while counters < how_big:
 #6 Print a Box
 width = int(input("How wide is the box? "))
 height = int(input("How tall is the box? "))
-sides = "*"
-top_bottom = width
-middle = height - 2
-count = 0
+for i in range (width):
+    for j in range (height):
+        print('*' if i in [0, height-1] or j in [0, width-1] else ' ', end=' ')
+    print()
 
 
-#7 & 8 Print a Triangle ## need help with this one
+
+#7 & 8 Print a Triangle
 def triangle(rows):
     for i in range(rows):
-        print(' ' * (rows-i-1) + '*' * (2 * i + 1))
+        print(' ' * (rows - i - 1) + '*' * (2 * i + 1))
         
 print(triangle(7))
 
@@ -62,3 +63,5 @@ def times_tables(n):
 
 
 print(times_tables(8))
+
+
