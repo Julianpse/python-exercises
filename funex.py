@@ -1,5 +1,7 @@
-from matplotlib import pyplot
+import matplotlib
 matplotlib.use("Agg")
+
+from matplotlib import pyplot
 
 def g(x):
     return x + 1
@@ -20,3 +22,5 @@ for x in x_list:
 pyplot.plot(x_list, f_output, x_list, g_output)
 pyplot.savefig('myplot.png')
 pyplot.close() # start a new plot
+
+
