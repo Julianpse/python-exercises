@@ -167,16 +167,20 @@ play_again()
 """
 
 #9 Play Again Twice
-
+"""
 def play_again():
-    answer = (input("Do you want to play again? (Y/N) ")).upper()
-    if answer == "Y":
-        print("True")
-        return True
-    else:
-        print("False")
-        return False
-
+    while True:
+        answer = (input("Do you want to play again? (Y/N) ")).upper()
+        if answer == "Y":
+            return True
+            break
+        elif answer == "N":
+            return False
+            break
+        else:
+            print("sorry that's not valid, try again")
+        
+        
 play_again()
-
+"""
 
