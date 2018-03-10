@@ -57,7 +57,7 @@
 
 
 
-#Exercise 4 Word Summary
+#Exercise 4 Word Summary + bonus 
 
 word_tally= {} 
 top_3 = []
@@ -73,8 +73,9 @@ def word_histogram():
       word_tally[words] += 1
   print(word_tally)
   
+  sorted_keys = sorted(word_tally, key = word_tally.get)
+  
+  top_3 = sorted_keys[-3:]
+  print(top_3)
   
 word_histogram()
-
-
-#Bonus
