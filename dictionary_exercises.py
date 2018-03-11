@@ -67,7 +67,7 @@ def word_histogram():
   paragraph = paragraph.split()
   
   for words in paragraph:
-    if words not in word_tally:
+    if words not in word_tally:clea
       word_tally[words] = 1
     else:
       word_tally[words] += 1
